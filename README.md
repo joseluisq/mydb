@@ -5,7 +5,7 @@
 ## Usage
 
 ```php
-$ftp_settings array(
+$database_settings array(
   "hostname"    => "localhost",
   "username"    => "usr",
   "password"    => "pwd",
