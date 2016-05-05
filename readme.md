@@ -28,6 +28,25 @@ $data = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 ```
 
+
+## Options
+
+```php
+<?php
+
+$options = array(
+    "driver"  => "mysql"          // > default: mysql
+  "hostname"  => "localhost"      // > default: localhost
+      "port"  => 3306             // > default: 3306
+  "username"  => "usr"
+  "password"  => "pwd"
+    "dbname"  => "dbname"
+   "charset"  => "utf8"           // > default: utf8
+   "options"  => array( [PDO options] )
+);
+
+```
+
 ## License
 MIT license
 
