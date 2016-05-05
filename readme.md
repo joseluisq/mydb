@@ -7,16 +7,13 @@
 ```php
 <?php
 
+// MySQL
+
 $options = array(
   "hostname"    => "localhost",
   "username"    => "usr",
   "password"    => "pwd",
-  "dbname"      => "dbname",
-
-  // "driver"   => "mysql",
-  // "port"     => 3306,
-  // "charset"  => "utf8",
-  // "options"  => array( [PDO options] )
+  "dbname"      => "dbname"
 );
 
 $dbh = new MyDb($options);
