@@ -1,11 +1,13 @@
 # MyDb
 
-> A small PHP Data Objects extension class for database handling.
+> A small PHP Data Objects ([PDO](http://php.net/manual/en/book.pdo.php)) extension class for database handling.
 
 ## Usage
 
 ```php
-$database_settings array(
+<?php
+
+$options = array(
   "hostname"    => "localhost",
   "username"    => "usr",
   "password"    => "pwd",
@@ -17,8 +19,8 @@ $database_settings array(
   // "options"  => array( [PDO options] )
 );
 
-$dbh = new MyDb($database_settings);
-$sql = 'SELECT id, description FROM `mytable`';
+$dbh = new MyDb($options);
+$sql = "SELECT id, description FROM `mytable`";
 
 $sth = $dbh->prepare($sql);
 $sth->execute();
@@ -26,5 +28,7 @@ $data = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 ```
 
-## Licence
-MIT licence
+## License
+MIT license
+
+© 2016 [José Luis Quintana](http://git.io/joseluisq)
